@@ -1,8 +1,8 @@
 package schoolproject;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+
+import junit.framework.*;
+
 
 /**
  * Unit test for simple App.
@@ -33,6 +33,10 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        int t1, t2;
+        t1=App.max(10, 2);
+        t2=App.max(2, 10);
+        System.out.println(t1 + t2);
+    	assertEquals(App.max(4, 5),App.max(5, 4));
     }
 }
